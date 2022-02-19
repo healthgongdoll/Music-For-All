@@ -1,0 +1,110 @@
+@keyframes rotate{
+    0%{
+      transform: translateY(0);
+    }
+  
+    25%{
+      transform: translateY(-20%);
+    }
+  
+    50%{
+      transform: translateY(-40%);
+    }
+  
+    75%{
+      transform: translateY(-60%);
+    }
+  
+    100%{
+      transform: translateY(-80%);
+    }
+  }
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.container {
+	height: 100vh;
+	width: 100%;
+	background-image: url(images/background2.png);
+	background-position: center;
+	background-size: cover;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.navbar {
+	width: 88%;
+	margin: auto;
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 15px;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+}
+
+.content h1 {
+	position:relative;
+	font-size: 60px;
+	font-weight: 100;
+	margin-top: 24px;
+	margin-bottom: 15px;
+	color: white;
+	font-weight: bold;
+	z-index: 3;
+}
+
+.content p {
+	position: relative;
+	font-size: 20px;
+	color: #6a7199;
+	z-index: 3;
+}
+
+.content {
+	margin-top: -3%;
+	margin-left: 8%;
+}
+
+.logo {
+	width: 160px;
+	cursor: pointer;
+}
+
+.feature-img {
+	height: 55%;
+	position: absolute;
+	bottom: 150px;
+	right: 10px;
+}
+
+.wanna-say {
+	font-weight: bold;
+	color: #FFE1E6;
+	font-size: 40px;
+	line-height: 3em;
+	height: 1em;
+	overflow: hidden;
+}
+
+.wanna-list {
+	animation: rotate 10s infinite;
+}
+
